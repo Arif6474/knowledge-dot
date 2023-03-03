@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../../assets/images/logo/header-logo.png";
+import company from "../../../assets/images/logo/logo.png";
 import downArrow from "../../../assets/images/icons/downArrow.png";
 import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu";
 import { RiCloseFill } from "@react-icons/all-files/ri/RiCloseFill";
+
 import "./Header.css";
 
 import { useState } from "react";
@@ -12,7 +14,7 @@ function Header() {
   const [aboutUs, setAboutUs] = useState(false);
   const [membershipOverview, setMembershipOverview] = useState(false);
   const [education, setEducation] = useState(false);
-
+  const { pathname } = useLocation();
   const handleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
@@ -40,11 +42,34 @@ function Header() {
           <AiOutlineMenu />
         </button>
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="" />
+        
+          {
+        pathname.includes("/aboutUs") ||
+        pathname.includes("/contactUs") ||
+        pathname.includes("/courses") ||
+        pathname.includes("/news") ||
+        pathname.includes("/allEvents") ||
+        pathname.includes("/membershipOverview") ||
+        pathname.includes("/ourBoard") ||
+        pathname.includes("/career") ||
+        pathname.includes("/weAreCilt") ||
+        pathname.includes("/corporateMembershipOverview") ||
+        pathname.includes("/joinCilt") ||
+        pathname.includes("/youngProfession") ||
+        pathname.includes("/knowledgeCenter") ||
+        pathname.includes("/womenInLogistics") ? (
+          <Link className="navbar-brand" to="/">
+            <img src={company} alt="" />
+          </Link>
+        ) : (
+          <Link className="navbar-brand" to="/">
+            <img src={logo} alt="" />
+          </Link>
+        )}
         </Link>
 
-        <div className="desktopNav m-auto">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <div className="desktopNav ">
+          <ul className="navbar-nav ">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 HOME
@@ -169,15 +194,14 @@ function Header() {
       {mobileMenu && (
         <div
           data-aos="fade-right"
-          class="offcanvas offcanvas-start"
+          className="offcanvas offcanvas-start"
           tabindex="-1"
           id="sideCanvas"
         >
-          <div class="offcanvas-header">
+          <div className="offcanvas-header">
             <button
               onClick={handleMobileMenu}
               type="button"
-              class="btn-close"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
               className="close_menu"
@@ -185,16 +209,16 @@ function Header() {
               <RiCloseFill />
             </button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="sideMenu">
+          <div className="offcanvas-body">
+            <ul className="sideMenu">
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li onClick={handleAboutUs}>
-                <Link class="sideDropdown">About Us</Link>
+                <Link className="sideDropdown">About Us</Link>
 
                 {aboutUs && (
-                  <ul class="dropdownMenu d-none">
+                  <ul className="dropdownMenu d-none">
                     <li>
                       <Link to="/aboutUs">About Us</Link>
                     </li>
@@ -205,9 +229,9 @@ function Header() {
                 )}
               </li>
               <li onClick={handleMembershipOverview}>
-                <Link class="sideDropdown">Membership</Link>
+                <Link className="sideDropdown">Membership</Link>
                 {membershipOverview && (
-                  <ul class="dropdownMenu d-none">
+                  <ul className="dropdownMenu d-none">
                     <li>
                       <Link to="/membershipOverview">Membership Overview</Link>
                     </li>
@@ -229,10 +253,10 @@ function Header() {
                 )}
               </li>
               <li onClick={handleEducation}>
-                <Link class="sideDropdown">Education</Link>
+                <Link className="sideDropdown">Education</Link>
 
                 { education &&
-                  <ul class="dropdownMenu d-none">
+                  <ul className="dropdownMenu d-none">
                     <li>
                       <Link to="/courses">Courses</Link>
                     </li>

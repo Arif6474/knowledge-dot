@@ -30,11 +30,12 @@ function Events() {
               <div className="event" key={index}>
                 <div className="h_events_card">
                   <Link to={`/eventDetails/${event?._id}`}>
+                    <div className="event_image">
                     <img
                       src={IMAGE_URL + event.image}
                       alt="events"
-                      className="img-fluid w-100"
                     />
+                    </div>
                     <div className="h_events_card_content">
                       <span className="date">
                         {format(new Date(event?.date), "dd-MM-yyyy")}

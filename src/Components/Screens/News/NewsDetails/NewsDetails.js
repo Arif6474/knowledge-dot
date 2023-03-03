@@ -3,6 +3,8 @@ import "./NewsDetails.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { IMAGE_URL, NEWS_API } from "../../../../Utilities/APIs";
+// import { format } from "date-fns";
+import Header from "../../../Partials/Header/Header";
 function NewsDetails() {
   const { newsId } = useParams();
   const [news, setNews] = useState({});
@@ -16,11 +18,20 @@ function NewsDetails() {
   }, [newsId]);
 
   return (
+    <>
+    <Header/>
     <section className="news_details">
       <div className="container">
         <div className="news_details_content">
           <div className="sc_title_wrapper nd_header">
             <h2 className="sc_title">{news.title}</h2>
+            <div>
+            <span className="date">
+            {/* {format(new Date(news?.date), "dd-MM-yyyy")} */}
+
+            {news?.date}
+            </span>
+            </div>
           </div>
           <div className="nd_chat_img">
             <img src={IMAGE_URL + news?.image} alt="" />
@@ -31,6 +42,7 @@ function NewsDetails() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 
