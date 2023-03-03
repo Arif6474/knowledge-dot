@@ -1,0 +1,244 @@
+
+.wl_section_text {
+    text-align: center;
+    margin-top: 8.3rem;
+    padding-bottom: 10.2rem;
+}
+.wl_section_text h3 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 4.6rem;
+    color: #361063;
+    
+}
+.wilat{
+    margin-left: -1.7rem;
+    margin-right: -1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+  
+}
+.wilat-content{
+    flex: 0 0 auto;
+    width: 49%;
+}
+.wl_text_box .wl_text_content {
+    margin-top: 1.5rem;
+    min-height: 54rem;
+    background: #f3f5f7;;
+    padding: 114px 60px 101px 67px;
+}
+.wl_text_box .wl_text_content .wl_text_header {
+    padding-bottom: 3.5rem;
+}
+.wl_text_box .wl_text_content .wl_text_header h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: #361063;
+}
+.wl_text_box .wl_text_content .wl_text_body {
+    padding-right: 7rem;
+}
+.wl_text_box .wl_text_content .wl_text_body p {
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: var(--gray-6);
+    padding-top: 1rem;
+}
+.Professionals_comment {
+    background: #361063;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10rem;
+    padding-bottom: 5px;
+}
+.wl_transpoart {
+    margin: 7rem 0;
+}
+.Professionals_comment .comments_content {
+    width: 66%;
+    margin: 0 auto;
+    padding-left: 6.7rem;
+}
+.wl_transpoart .comments_content .wl_blue_image p::after {
+    content: '';
+    width: 2rem;
+    height: 1.4rem;
+    position: absolute;
+    background: url(../../../assets/images/icons/double-coute-bottom.svg) no-repeat;
+    background-size: cover;
+    bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+.clint {
+    color: #ffffff;
+    padding-bottom: 2.5rem;
+    text-align: end;
+    width: 100%;
+    font-size: 17px;
+    line-height: 3.5rem;
+    font-weight: 400;
+}
+.wilat-btn{
+    margin: 0 auto;
+}
+.comments_content{
+    padding-top: 60px;
+}
+.logistics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logistics-content{
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.wl_transpoart .wl_transpoart_image img {
+    width: 100%;
+}
+.logistics-image{
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+.comment_content {
+    margin: 0;
+    padding-left: 6.7rem;
+}
+
+.short_comment{
+    margin-bottom: 20px;
+    position: relative;
+    text-align: start;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 2.7rem;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* .short_comment::before {
+    content: '';
+    width: 2rem;
+    height: 1.4rem;
+    position: absolute;
+    background: url(../../../assets/images/icons/double-coute-top.svg) no-repeat;
+    background-size: cover;
+    top: -1rem;
+    left: -2rem;
+} */
+.comment-hillary{
+    position: relative;
+    text-align: start;
+    width: 100%;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: var(--gray-6);
+}
+/* .comment-hillary::before {
+    content: '';
+    width: 2rem;
+    height: 1.4rem;
+    position: absolute;
+    background: url(../../../assets/images/icons/double-coute-top.svg) no-repeat;
+    background-size: cover;
+    top: -1rem;
+    left: -2rem;
+} */
+/* .comment-hillary::after {
+    content: '';
+    width: 2rem;
+    height: 1.4rem;
+    position: absolute;
+    background: url(../../../assets/images/icons/double-coute-bottom.svg) no-repeat;
+    background-size: cover;
+    bottom: 0rem;
+    margin-left: 0.5rem;
+} */
+.wl_transpoart .comment_content .clint {
+    text-align: end;
+    width: 100%;
+    font-size: 21px;
+    line-height: 3.5rem;
+    font-weight: 400;
+    color: #361063;
+}
+@media (max-width: 767.98px) {
+   
+    .Professionals_comment .comments_content {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0.7rem;
+      }
+      .benefits {
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .benefit-content {
+        flex: 0 0 auto;
+        width: 100%;
+
+    }
+    .list_items_with_btn_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+  
+
+    .wl_section_text h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 4.6rem;
+        color: #361063;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .wilat {
+        flex-direction: column;
+    }
+    .wilat-content {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .wl_text_box .wl_text_content {
+        margin-top: 1.5rem;
+        min-height: 54rem;
+        background: #f1f1f1;
+        padding: 57px 3px 31px 25px;
+    }
+    .wl_text_box .wl_text_content .wl_text_body {
+        padding-right: 0px;
+    }
+    .logistics {
+        flex-direction: column;
+      }
+      .logistics-content {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      .logistics-image {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      .comment_content {
+        margin-top: 25px;
+        padding-left: 0.7rem;
+    }
+    .comment-hillary {
+        font-size: 22px;
+    }
+}
+
+

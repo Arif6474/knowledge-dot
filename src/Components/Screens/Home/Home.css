@@ -1,0 +1,28 @@
+.home_banner_nav {
+    position: relative;
+}
+.home_banner_nav .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 12.64%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.home_banner_nav .dropdown-menu{
+    padding: 0;
+}
+
+.home_banner_nav .navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+}
+.home_banner_nav .nav-link img{
+    filter: invert(100%);
+}
+.home_banner_nav .navbar-nav .nav-btn{
+    border: 1px solid #ffffff;
+}
+
+.home_banner_nav .open_menu svg path{
+    fill: #ffffff;
+  }

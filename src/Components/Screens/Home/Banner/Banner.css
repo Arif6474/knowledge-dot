@@ -1,0 +1,138 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination {
+  bottom: 70px !important;
+  left: 450px !important;
+  width: 100% !important;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+/* .swiper-pagination-bullet {
+  width: 36px;
+  height: 5px;
+  border-radius: 78px;
+  background-color: #ffffff;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #ffffff;
+} */
+.banner {
+  position: relative;
+  width: 100%;
+
+  height: 100vh;
+}
+.banner img {
+  width: 100%;
+  height: 108rem;
+}
+.banner_btn {
+  text-align: start;
+}
+.banner_btn .btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.banner_desc {
+  text-align: start;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 2.5rem 0 7.1rem;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.swiper-slide {
+  position: relative;
+  transition-property: transform;
+}
+.homeContent {
+  z-index: 1;
+}
+.hero-container {
+  position: absolute;
+  top: 35%;
+  left: 24.2rem;
+  right: 0;
+}
+
+.heroTitle {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #ffffff;
+  text-align: start;
+  max-width: 64.6rem;
+}
+@media (max-width: 767.98px) {
+  .swiper-pagination {
+    bottom: 40px !important;
+    left: -70px !important;
+    width: 100% !important;
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+
+  .hero-container {
+    position: absolute;
+    top: 40%;
+    left: 1.2rem;
+    right: 0;
+  }
+  .heroTitle {
+    font-size: 2.5rem;
+    line-height: 37px;
+}
+.banner_desc {
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 1.5rem 0 3.1rem;
+}
+}

@@ -1,0 +1,64 @@
+.member_cards {
+  flex: 0 0 auto;
+  width: 33%;
+  padding: 36px 32px;
+}
+.member_card {
+  background: var(--light-gray);
+  border: 1px solid var(--off-white);
+  padding: 15px;
+}
+.member_card_content {
+  text-align: center;
+}
+.member_card_content h3 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 0 1.6rem;
+  color: #361063;
+}
+.member_card_content p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #bb9760;
+  text-align: center;
+  text-transform: capitalize;
+}
+.member_card_content .btn_box {
+  margin-top: 2.3rem;
+}
+.bio_btn {
+  color: #361063;
+  font-size: 13px;
+  font-weight: 700;
+}
+.full_bio .bio_btn {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+
+}
+@media (max-width: 767.98px) {
+  .member_cards {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  .member_card {
+    background: var(--light-gray);
+    border: 1px solid var(--off-white);
+    padding: 5px;
+    margin: 10px 0px;
+  }
+}

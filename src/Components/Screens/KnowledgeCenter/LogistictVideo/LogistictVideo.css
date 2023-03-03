@@ -1,0 +1,36 @@
+.video_section{
+    padding-top: 10rem;
+}
+
+.Knowledge_video {
+    width: 686px;
+    margin: 0 auto;
+    margin-top: 6.9rem;
+  }
+  .Knowledge_video iframe {
+    width: 100%;
+    min-height: 45rem;
+  }
+  .Knowledge_video .description p {
+    line-height: 2.1rem;
+    color: #000000;
+    margin-top: 2.6rem;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: start;
+  }
+  
+  @media (max-width: 767.98px) {
+    .Knowledge_video {
+      width: 100%;
+    }
+    .Knowledge_video .description p {
+      line-height: 2.1rem;
+      color: #000000;
+      margin-top: 2.6rem;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: start;
+  }
+  }
+  

@@ -1,0 +1,118 @@
+.what_we_do {
+  padding: 10rem 0;
+}
+.sc_title_wrapper.border_bottom {
+  text-align: left;
+  border-bottom: 1px solid var(--off-white);
+  margin-bottom: 4.2rem;
+}
+.sc_color_title {
+  font-size: 4rem;
+  line-height: 4.7rem;
+  font-weight: 400;
+  color: var(--light-gold);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.7rem;
+}
+.what_we_do_content {
+  padding: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wwd_card {
+  margin: 1.5rem 1rem;
+  width: 23%;
+  background: #f3f5f7;
+  padding: 6rem 4.2rem 4rem;
+  text-align: center;
+}
+.wwd_card .icon {
+  position: relative;
+  max-width: 4rem;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  margin: 0 auto 1.2rem;
+}
+.wwd_card .icon::before {
+  content: "";
+  position: absolute;
+  width: 2.8rem;
+  height: 2px;
+  background: var(--navy-blue);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.descriptions {
+  padding-top: 1.3rem;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (max-width: 767.98px) {
+  .what_we_do_content {
+    padding: 0rem;
+
+}
+  .sc_title_wrapper.border_bottom {
+    margin-bottom: 27px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .sc_color_title {
+    font-size: 20px;
+    line-height: 4rem;
+    font-weight: 400;
+    color: var(--light-gold);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.7rem;
+  }
+  .what_we_do {
+    margin: 0;
+  }
+  .description p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .our_history_thumb_wrapper {
+    max-width: 35.1rem;
+  }
+  .our_history_wrapper {
+    margin: 27px auto 0;
+    max-width: initial;
+    width: initial;
+  }
+  .our_history_wrapper .history .history_title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .description p {
+    font-size: 14px;
+  }
+
+  .our_history_wrapper .history .history_title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  .wwd_card {
+    width: 44%;
+    padding: 4rem 1rem ;
+   
+}
+  .descriptions {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}

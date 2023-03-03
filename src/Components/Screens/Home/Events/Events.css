@@ -1,0 +1,132 @@
+.h_event {
+  margin-top: 100px;
+}
+
+.sc_event_title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 34px;
+  line-height: 4.7rem;
+  font-weight: 400;
+  color: #bb9760;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.7rem;
+  text-align: start;
+  border-bottom: 2px solid #bb9760;
+}
+
+.sc_title_wrapper.border_bottom {
+  margin-bottom: 4.2rem;
+}
+
+/* .h_events_cards_wrapper .events_content {
+  margin-top: -4.2rem;
+} */
+.events_content {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.event {
+  width: 33.3333333333%;
+  flex: 0 0 auto;
+  padding: 36px 30px 0px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h_events_card_content {
+  padding: 1.2rem 0;
+}
+
+.h_events_card_content h5 {
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+  color: #361163;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.event-desc {
+  font-family: "Heebo", sans-serif;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: #808080;
+}
+
+.meta_date svg {
+  width: 15px;
+  height: 15px;
+  margin-top: -4px;
+}
+
+.date {
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #808080;
+}
+
+.h_event .box_btn_wrapper {
+  margin-top: 12.4rem;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .h_event {
+    margin-top: 200px;
+  }
+
+  .sc_title_wrapper.border_bottom {
+    margin-bottom: 27px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .h_events_cards_wrapper .events_content {
+    margin-top: -2.8rem;
+  }
+
+  .h_events_card_content {
+    padding-top: 1rem rem;
+  }
+
+  .h_events_card_content h5 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    min-height: 3rem;
+  }
+
+  .event {
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+    padding: 36px 0px 0px;
+  }
+
+  .date {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .h_event .box_btn_wrapper {
+    margin-top: 8.4rem;
+    text-align: start;
+  }
+}

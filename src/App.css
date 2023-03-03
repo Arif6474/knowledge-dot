@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700;800&family=Heebo:wght@200;300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary1: #361163;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+/* common classes */
+.container {
+  --containerWidth: 143.6rem;
+  --containerPadding: 2.4rem;
+  max-width: calc(var(--containerWidth) + (var(--containerPadding) * 2));
+  padding: 0 var(--containerPadding);
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: var(--primary1);
+  border: 2px solid var(--primary1);
+  padding: 2rem 3.8rem;
+}
+.sm_title {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.3em;
+  color: #666666;
+}
+.sc_title_wrapper.center {
+  text-align: center;
+}
+
+.sc_title_wrapper.border_bottom {
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--gray-1);
+}
+
+.sc_title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  background: linear-gradient(
+    90deg,
+    rgba(54, 17, 99, 0.9) 0%,
+    rgba(178, 142, 94, 0.9) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sc_sub_title {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gray-6);
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: var(--gray-6);
+  
+}
+.title_desc{
+  padding: 9.9rem 0;
+  max-width: 104.4rem;
+  margin: auto;
+  text-align: center;
+}
+
+/* list style */
+.list_with_icon li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.list_with_icon li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.list_with_icon li::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover cover;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: var(--gray-5);
+  border-radius: 50%;
+}
+.profession_forum{
+  padding-top: 10rem;
+}
+.comment_top_margin{
+  margin-top: 10rem;
+}

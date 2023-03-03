@@ -1,0 +1,20 @@
+
+.login_button{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 767.98px) {
+    .sc_tittle_wrappers {
+        width: 100%;
+        margin: auto;
+    }
+    .sc_knowledge_title {
+        position: relative;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 4.8rem;
+        text-align: center;
+        color: #361063;
+        border-bottom: 2px solid #BB9760;
+    }
+}

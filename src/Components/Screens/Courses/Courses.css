@@ -1,0 +1,18 @@
+
+.course-content{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+    .courses{
+        margin: 200px auto;
+    }
+    .course-content{
+        flex-direction: column;
+    }
+    .course-content {
+        padding-top: 40px;
+    }
+}

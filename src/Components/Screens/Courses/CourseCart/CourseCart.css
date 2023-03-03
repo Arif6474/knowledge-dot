@@ -1,0 +1,91 @@
+.course_info {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  padding: 79px 34px 0px;
+  position: relative;
+}
+.card {
+  position: relative;
+  border-color: #3610630f;
+  background: #fafafa;
+  border: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: 0.25rem;
+}
+.flag {
+  color: #ffffff;
+  width: 60px;
+  height: 7.5rem;
+  position: absolute;
+  top: -21px;
+  right: 0rem;
+  background: url(../../../../assets//images/courses/offer-card.svg) no-repeat;
+  background-size: contain;
+}
+.courses_cards .flag p {
+  padding: 1rem 0.5rem 2.3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+.courses_cards .card_image {
+  margin: 2.3rem 2.1rem 1.7rem;
+}
+.card_image img {
+  width: 100%;
+}
+.card-body-text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  padding: 17px 0px 30px;
+  text-align: start;
+}
+.hour {
+  padding-bottom: 1.5rem;
+  display: flex;
+}
+.hour img,
+.fees img {
+  width: 1.8rem;
+  height: 2rem;
+  margin-right: 2.7rem;
+}
+.hour p,
+.fees p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #717171;
+}
+.fees {
+  padding-bottom: 4.5rem;
+  display: flex;
+}
+.course-btn {
+  background: #361063;
+}
+
+.course-btn .read-more {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Heebo;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 1rem;
+}
+@media (max-width: 767.98px) {
+  .course_info {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 40px 13px 0px;
+    position: relative;
+    margin: 20px 0px;
+  }
+}

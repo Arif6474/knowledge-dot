@@ -1,0 +1,117 @@
+.career_details {
+  margin-top: 8.9rem;
+  margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.title_desc{
+    padding: 9.9rem 0;
+    max-width: 104.4rem;
+    margin: auto;
+    text-align: center;
+}
+.career_details .career_heading {
+  width: 100.4rem;
+  margin: 0 auto;
+}
+.career_details .career_heading h2 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  text-align: center;
+  color: var(--navy-blue);
+}
+.career_details .career_heading h2::after {
+  position: absolute;
+  content: "";
+  width: 26.6rem;
+  height: 2px;
+  margin-top: 1rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #bb9760;
+}
+.career_details .career_body_text {
+  width: 97.8rem;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+  margin-bottom: 5.4rem;
+}
+.career_details .career_body_text p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+.career_details .career_body_footer h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4.7rem;
+  color: var(--navy-blue);
+}
+.title_desc .desc_top{
+    padding-top: 3rem;
+}
+.career_desc {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: var(--gray-6);
+  padding-top: 3rem;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .career_details {
+    margin-top: 200px;
+  }
+  .career_details .career_heading {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .career_details .career_heading h2 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .career_details .career_body_text p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  .career_details .career_body_text {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    margin-bottom: 5.4rem;
+  }
+  .career_details .career_body_footer h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 3.7rem;
+    color: var(--navy-blue);
+    width: 360px;
+    margin: 0 auto;
+  }
+  .career_details {
+    width: auto;
+  }
+ 
+  .career_cards .blue_card .b_card_heading h3 {
+    font-size: 20px;
+    line-height: 2.6rem;
+    font-weight: 500;
+    color: var(--light-gold);
+  }
+  .career_cards .blue_card .b_card_text p {
+    font-size: 15px;
+    line-height: 2.1rem;
+    font-weight: 400;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+}

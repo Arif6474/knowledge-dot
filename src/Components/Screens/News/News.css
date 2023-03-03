@@ -1,0 +1,28 @@
+.news_cards{
+    padding-top: 60px;
+}
+.color_title{
+    text-align: left;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 10px;
+  border-bottom: 1px solid #CFCFCF;
+  font-weight: 700;
+  background: linear-gradient(to right, #361163 70%, #B28E5E 30%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.news_card{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 767.98px){
+    .news_cards{
+        margin-top: 160px;
+    }
+    .news_card{
+        flex-direction: column;
+    }
+}

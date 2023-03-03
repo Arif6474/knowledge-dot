@@ -1,0 +1,214 @@
+.footer {
+  margin-top: 120px;
+}
+.footer_inner_one {
+  padding: 8.5rem 0 5.2rem;
+}
+.footer .logo_wrapper {
+  max-width: 13.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer h4 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  margin: 3rem 0 0.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(
+    0,
+    rgba(54, 17, 99, 0.9) 50%,
+    rgba(178, 142, 94, 0.9) 50%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer h5 {
+  font-size: 15.5px;
+  line-height: 2.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer_inner_Two {
+  padding: 9rem 0 4.2rem;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.footer-content {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+.footer-details {
+  width: 25%;
+}
+.footer h6 {
+  color: #000000;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.footer_inner_Two ul.icon li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer_inner_Two a {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #717171;
+}
+.footer_inner_three {
+  padding: 7rem 3rem;
+  max-width: 90.4rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_inner_three .subscribe_wrapper {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100% !important;
+  justify-content: space-between;
+}
+
+/* .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+  } */
+.footer_inner_three .form-control {
+  width: 70%;
+  padding: 1.5rem 0rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 300;
+  border-bottom: 1px solid #808080;
+  background: #ffffff;
+}
+.email-input {
+  margin: 0px !important;
+}
+.footer_inner_three button {
+  font-family: Archivo;
+
+  font-size: 14px;
+  line-height: 2.1rem;
+  font-weight: 700;
+  color: #361063;
+  padding: 0.2rem 1rem !important;
+  border: 1px solid #361063;
+}
+.footer_inner_three .social_madia_wrapper {
+  text-align: right;
+}
+.social_wrapper {
+  padding-bottom: 1rem;
+  padding-right: 25px;
+}
+.social_wrapper ul {
+  display: inline-flex;
+}
+.social_wrapper ul li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.social_wrapper ul li a {
+  display: inline-block;
+  max-width: 25px;
+  padding: auto;
+}
+.footer_inner_four {
+  border-top: 1px solid #e6e6e6;
+  padding: 3.8rem 0 4.5rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.footer_inner_four p {
+  font-size: 15.5px;
+  line-height: 3.1rem;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: 400;
+}
+.antopolis {
+  font-size: 15.5px;
+  line-height: 3.1rem;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: underline;
+}
+@media (max-width: 767.98px) {
+  .footer_inner_one {
+    padding: 50px 0 33px 0;
+  }
+  .footer .logo_wrapper {
+    max-width: 85px;
+  }
+  .footer h4 {
+    font-weight: 500;
+    font-size: 14.029px;
+    line-height: 16px;
+  }
+  .footer h5 {
+    font-weight: 500;
+    font-size: 10.5217px;
+    line-height: 12px;
+  }
+  .footer-details {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 25px auto;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer_inner_three {
+    padding: 4.5rem 0;
+    max-width: 90.4rem;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer_inner_three .subscribe_wrapper {
+    max-width: 100%;
+    margin: auto;
+  }
+  .footer h6 {
+    text-align: center;
+  }
+  .footer_inner_three .form-control {
+    width: 54%;
+   
+  }
+  .footer_inner_three .social_madia_wrapper {
+    text-align: center;
+    padding: 40px 0px 0px;
+  }
+  .footer_inner_four {
+    display: block;
+    text-align: center;
+  }
+  .footer_inner_four p {
+    line-height: 23px;
+  }
+  .by_develop {
+    padding-top: 10px;
+  }
+}

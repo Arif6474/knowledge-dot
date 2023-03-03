@@ -1,0 +1,155 @@
+.membership_fees {
+    background-color: #F3F5F7;
+    padding         : 7rem 0;
+}
+
+.membership_fees .sc_title_wrapper .desc {
+    max-width: 104.4rem;
+    margin   : 3rem auto 9.2rem;
+}
+
+
+.membership_fees_cards {
+    max-width            : 77rem;
+    margin               : 0 auto;
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 40px;
+}
+
+
+.membership_fees_header .grades_header h2 {
+    display       : inline-block;
+    border-bottom : 2px solid var(--light-gold);
+    padding-bottom: 0.5rem;
+    margin-bottom : 3.8rem;
+}
+
+.grades_header h2 {
+    font-size  : 4.5rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    color      : var(--light-gold);
+}
+
+.description p {
+    text-align   : left;
+    font-size    : 15.5px;
+    color        : var(--white);
+    line-height  : 2.8rem;
+    margin-bottom: 6.2rem;
+}
+
+.membership_fees_body {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    gap                  : 40px;
+}
+
+.membership_fees .list_items_with_btn_box {
+    height: calc(100% - 17.6rem);
+}
+
+.list_items_with_btn_box {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items    : flex-start;
+}
+
+.list_items_with_btn_box .btn_box_wrapper {
+    display      : flex;
+    align-items  : center;
+    padding-right: 3.2rem;
+}
+
+.download_form {
+    margin-left: 4rem;
+    color      : var(--white);
+}
+
+
+.joinCource {
+    color: var(--light-gold);
+}
+
+z .membership_fees .btn_box_wrapper>a.btn_more {
+    color: var(--white);
+}
+
+
+.membership_fees_card {
+    background   : var(--white);
+    padding      : 2rem 2rem 3rem;
+    text-align   : center;
+    border-radius: 1rem;
+    border       : 1px solid #B28E5E;
+}
+
+.membership_fees_card .card_header {
+    padding   : 1.2rem 6rem;
+    background: linear-gradient(90deg, rgba(54, 17, 99, 0.9) 0%, rgba(178, 142, 94, 0.9) 100%);
+}
+
+.membership_fees_card .card_header span {
+    font-family: 'Heebo', sans-serif;
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 1.6rem;
+    line-height: 2.4rem;
+    text-align : center;
+    color      : var(--white);
+}
+
+.membership_fees_card .card_body h5 {
+    font-weight  : 700;
+    font-size    : 1.8rem;
+    line-height  : 2.2rem;
+    text-align   : center;
+    color        : var(--primary1);
+    border-bottom: 1px solid var(--gray-1);
+    padding      : 4rem 0 .8rem;
+}
+
+.membership_fees_card .card_body h6 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-size  : 1.4rem;
+    line-height: 2.1rem;
+    text-align : center;
+    color      : var(--gray-9);
+}
+
+
+.membership_fees_card .card_body .registration_fee h6 {
+    padding-top: 1.2rem;
+}
+
+.membership_fees_card .card_body .charge_list {
+    border-bottom: 1px solid var(--gray-1);
+    padding: 1.2rem 0;
+}
+
+.membership_fees_card .card_body .charge_list h6:not(:last-child) {
+    padding-bottom: .5rem;
+}
+
+.membership_fees_card .card_footer a {
+    margin-top: 3rem;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .membership_fees_body {
+        display              : grid;
+        grid-template-columns: 1fr;
+        gap                  : 40px;
+    }
+
+    .membership_fees_cards {
+        display              : grid;
+        grid-template-columns: 1fr;
+        gap                  : 40px;
+    }
+}

@@ -1,0 +1,277 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f3f4;
+}
+.form_title {
+  padding-top: 9rem;
+}
+.memershipForm {
+  padding-top: 9.6rem;
+  padding-bottom: 11rem;
+  max-width: 132rem;
+  width: 100%;
+  margin: auto;
+}
+.formTitle {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.7rem;
+  color: #361063;
+  text-align: left;
+}
+.sc_color_title::before {
+  height: 1px;
+}
+.sc_color_title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: var(--light-gold);
+}
+.formWrapper {
+  max-width: 132rem;
+  width: 100%;
+  margin: auto;
+  padding: 4.6rem;
+  background: #ffffff;
+}
+.user-personal-info {
+  margin: 4rem 0;
+}
+.employe_history {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.additional_info {
+  margin: 4rem 0;
+}
+.groupFrom {
+  padding-bottom: 6rem;
+}
+.memershipForm > .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.group_items-header {
+  grid-template-columns: 1fr;
+}
+.user-identify {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 2rem;
+}
+.user-input {
+  display: block;
+}
+.textAreaMsg {
+  font-family: "Heebo";
+  text-align: end;
+  display: block;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #979797;
+  margin-top: 0.9rem;
+}
+label {
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+.form-label {
+  font-weight: normal;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  color: #323232;
+  margin: 0;
+}
+.form-label span {
+  color: #ff0000;
+}
+.form-control {
+  padding: 1.2rem 2.2rem;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  color: #979797;
+  border: none;
+  border-radius: 0;
+  background: #f1f3f4;
+  margin: 0.7rem 0;
+}
+.user-personal-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.grade-selector {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  margin: 0.8rem 0;
+}
+.user-personal-intro {
+  margin: 1rem 0;
+}
+.grade-select {
+  margin: 0 0;
+}
+.form-select {
+  padding: 1rem 2.2rem;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  color: #979797;
+  border: none;
+  background-color: #f1f3f4;
+  background-position: right 1.8rem center;
+  border-radius: 0;
+}
+.addEmplyBtn {
+  text-align: left;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  background: linear-gradient(
+    90deg,
+    rgba(54, 17, 99, 0.9) 0%,
+    rgba(178, 142, 94, 0.9) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: none;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+}
+.current-job {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+.job_details {
+  margin: 1rem 0;
+}
+.user-textform {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 1rem;
+}
+.file_label {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #717171;
+  margin-top: 0.9rem;
+}
+.file_label span {
+  color: #ff0000;
+}
+.form-control[type="file"] {
+  width: 30.1rem;
+  padding-left: 7rem;
+  background-image: url(../../../assets/images/attach_file_black_24dp\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: left 2.3rem center;
+  background-size: 3.3rem 3.3rem;
+  padding: 2.8rem 2.8rem 2.8rem 7.5rem;
+  color: transparent;
+  font-size: 1.5rem;
+}
+.form-check-inline {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+}
+.form-check .form-check-input {
+  float: left;
+  margin-left: -1.5em;
+}
+.form-check-input {
+  height: 2.9rem;
+  width: 2.9rem;
+  margin-right: 1.9rem;
+  margin-top: 0;
+  border: 2px solid #361063;
+}
+.form-check-label {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(54, 17, 99, 0.9) 0%,
+    rgba(178, 142, 94, 0.9) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.submit-button {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .user-identify {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  .employe_history {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .memershipForm {
+    padding-bottom: 0;
+    padding-top: 4rem;
+  }
+  .formTitle {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .form_title .sc_title{
+    font-size: 2.5rem;
+  } 
+  .formWrapper {
+  
+    padding: 3rem 1.6rem;
+
+}
+  .user-personal-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .current-job {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .join_cilt_content_wrapper {
+    min-height: 40rem;
+  }
+}

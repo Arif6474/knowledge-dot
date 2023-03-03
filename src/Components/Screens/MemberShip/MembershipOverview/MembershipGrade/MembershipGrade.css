@@ -1,0 +1,106 @@
+.membership_grade .image_wrapper {
+    height  : 39.3rem;
+    margin  : 7rem 0 4.5rem;
+    overflow: hidden;
+}
+
+.membership_grade .image_wrapper img {
+    width          : 100%;
+    height         : 39.3rem;
+    object-fit     : cover;
+    object-position: center center;
+}
+
+.membership_wrapper {
+    padding-bottom: 5rem;
+}
+
+.membership_wrapper .nav_with_title {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    border-bottom  : 1px solid var(--gray-1);
+}
+
+.nav_with_title .sc_title {
+    padding-bottom: 2rem;
+}
+
+.nav_with_title .nav {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav_with_title .tabs {
+    font-family   : 'Heebo', sans-serif;
+    font-weight   : 400;
+    font-size     : 1.8rem;
+    line-height   : 2.6rem;
+    color         : var(--gray-4);
+    text-transform: capitalize;
+    background    : none;
+    outline       : none;
+    padding       : 1rem 0 2rem 0rem;
+    position      : relative;
+    cursor        : pointer;
+}
+
+.nav_with_title .tabs:not(:last-child) {
+    margin-right: 6.8rem;
+}
+
+.nav_with_title .active-tabs::before {
+    content   : '';
+    position  : absolute;
+    bottom    : -2px;
+    left      : 0;
+    width     : 100%;
+    height    : 2px;
+    background: var(--light-gold);
+}
+
+.nav_with_title .active-tabs {
+    font-weight: 700;
+    color      : var(--primary1);
+}
+
+.nav-tabs {
+    position     : relative;
+    border       : none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding      : 0 3.5rem;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.active-tab-pane {
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    .nav {
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        gap                  : 10px;
+    }
+    .nav_with_title .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-tabs {
+        position     : relative;
+        border       : none;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        padding      : 0;
+    }
+    .nav_with_title .tabs:not(:last-child) {
+        margin-right: 3.8rem;
+    }
+
+}

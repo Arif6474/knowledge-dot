@@ -1,0 +1,122 @@
+.president_message_section {
+  padding: 13rem 0;
+}
+.president {
+  display: flex;
+  flex-wrap: wrap;
+}
+.board_cards {
+  background-color: #f3f5f7;
+  padding-top: 10.7rem;
+}
+.president_image {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+.president_message {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+.message_image {
+  margin-top: 7.2rem;
+  max-width: 387px;
+}
+.message_image img {
+  width: 100%;
+}
+.message_image h3 {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 21px;
+  color: #b28e5e;
+  text-align: center;
+  padding-top: 2.3rem;
+}
+.message_content h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  color: #bb9760;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.message_content p {
+  padding-top: 5.8rem;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3.9rem;
+  color: #666666;
+  position: relative;
+  display: inline-block;
+}
+.message_content p::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../assets/images/icons/double-coute-top.svg);
+  background-repeat: no-repeat;
+  width: 2.8rem;
+  height: 1.9rem;
+  background-size: 2.8rem 1.9rem;
+  left: -32px;
+  top: 60px;
+  opacity: 0.3;
+}
+.message_content p .bottom_cote img {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  opacity: 0.3;
+}
+.bottom_cote {
+  position: relative;
+}
+.our-board {
+  display: inline-block;
+  text-align: left;
+  font-size: 25px;
+  line-height: 48px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+  font-weight: 700;
+  background: linear-gradient(to right, #361163 30%, #b28e5e 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .president_message_section {
+    padding: 7rem 0;
+}
+  .president {
+    flex-direction: column;
+  }
+  .president_image {
+    width: 100%;
+    margin-top: -6rem;
+  }
+  .message_image {
+    max-width: 100%;
+}
+  .president_message {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .message_content p::before {
+    left: -24px;
+    top: 51px;
+  }
+  .member {
+    flex-direction: column;
+  }
+}

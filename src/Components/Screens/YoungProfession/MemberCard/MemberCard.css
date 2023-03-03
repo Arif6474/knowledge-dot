@@ -1,0 +1,32 @@
+.email {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #717171;
+  padding-top: 0.6rem;
+}
+.country {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  text-transform: capitalize;
+  color: #717171;
+  padding-top: 1.9rem;
+}
+.women-name {
+    font-family: "Archivo";
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0px;
+    text-transform: capitalize;
+}
+.women-desc {
+    font-family: "Archivo";
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: -.3px;
+}

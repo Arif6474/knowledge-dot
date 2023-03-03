@@ -1,0 +1,9 @@
+.memership_overview {
+    padding: 10rem 0 18rem;
+}
+
+.memership_overview .desc {
+    max-width : 105rem;
+    margin    : 3rem auto 0;
+    text-align: center;
+}

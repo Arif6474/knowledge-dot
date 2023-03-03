@@ -1,0 +1,69 @@
+.srt_history {
+  padding: 80px 0px;
+}
+
+.history_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.srt_content_wrapper {
+  background: F3F5F7;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 9.6rem 14.3rem 9.6rem 14.3rem;
+}
+.history-content {
+  width: 50%;
+}
+.srt_content_wrapper h2 {
+  font-size: 36px;
+  line-height: 4.4rem;
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 2.6rem;
+}
+.cilt_bangladesh{
+  padding-top: 2rem;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: #808080;
+}
+.btn_box {
+  padding: 1.6rem 3rem;
+  display: inline-block;
+  border: 1px solid #e0c055;
+  cursor: pointer;
+}
+
+.cilt_btn{
+    padding-top: 7.1rem;
+}
+.srt_image_wrapper img {
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .srt_content_wrapper {
+    padding: 34px 24px;
+  }
+  .history_container {
+    flex-direction: column;
+  }
+  .history-content {
+    width: 100%;
+  }
+  .srt_content_wrapper h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .description p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
