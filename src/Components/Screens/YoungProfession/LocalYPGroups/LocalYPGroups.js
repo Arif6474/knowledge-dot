@@ -1,8 +1,19 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import MembersBenefitsAddressImage from '../../../../assets/images/young_professional/Rectangle-64.png'
+import { YP_GROUPS_API } from '../../../../Utilities/APIs';
 
 function LocalYPGroups() {
+    const [youngProfessionGroup, setYoungProfessionGroup] = useState([]);
+    console.log(youngProfessionGroup);
+    useEffect(() => {
+        async function getYoungBenefit() {
+            const { data } = await axios.get(YP_GROUPS_API)
+            setYoungProfessionGroup(data)
+        }
+        getYoungBenefit()
+    }, [])
     return (
         <section className="membereship_Benefits left_right_content">
             <div className="container">

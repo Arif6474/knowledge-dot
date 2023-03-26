@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import chat from '../../../../assets/images/icons/chat.svg'
-import avatar from '../../../../assets/images/icons/woman.svg'
+import chat from '../../../../assets/icons/chat.svg'
+import avatar from '../../../../assets/icons/woman.svg'
 import './Forums.css'
 import { Link } from 'react-router-dom'
 import {  PROFESSIONAL_FORUM_API } from '../../../../Utilities/APIs'
@@ -34,7 +34,7 @@ function Forums() {
                             <p>{professionalForums[0]?.description}</p>
                         </div>
                         <div className="btn_wrapper">
-                            <Link to="/young-profession" className="btn_more">Know More
+                            <Link to="/youngProfession" className="btn_more">Know More
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" fill="none">
                                     <path
                                         d="M7.83329 0V7.83333H33.6442L0 41.4775L5.52251 47L39.1667 13.3558V39.1667H47V0H7.83329Z"
@@ -57,7 +57,7 @@ function Forums() {
                             <p>{professionalForums[1]?.description}</p>
                         </div>
                         <div className="btn_wrapper">
-                            <Link href="" className="btn_more">Know More
+                            <Link to='/womenInLogistics' className="btn_more">Know More
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" fill="none">
                                     <path
                                         d="M7.83329 0V7.83333H33.6442L0 41.4775L5.52251 47L39.1667 13.3558V39.1667H47V0H7.83329Z"

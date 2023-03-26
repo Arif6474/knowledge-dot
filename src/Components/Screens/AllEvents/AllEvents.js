@@ -3,7 +3,7 @@ import axios from "axios";
 import { EVENT_API } from "../../../Utilities/APIs";
 import EventCart from "./EventCart/EventCart";
 import BannerTop from "../../Partials/Sections/BannerTop/BannerTop";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/aboutUs.png";
 import Header from "../../Partials/Header/Header";
 
 function AllEvents() {

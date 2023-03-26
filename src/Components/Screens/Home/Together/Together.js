@@ -1,14 +1,14 @@
 import React from "react";
 import "./Together.css";
-import travel from "../../../../assets/images/home/Active Travel.png";
-import freight from "../../../../assets/images/home/Freight.png";
-import bus from "../../../../assets/images/home/bus.png";
-import plane from "../../../../assets/images/home/air-plane.png";
-import meritime from "../../../../assets/images/home/Ports Meritime.png";
-import train from "../../../../assets/images/home/train.png";
-import logistics from "../../../../assets/images/home/Logistics.png";
-import operation from "../../../../assets/images/home/Operations.png";
-import byke from "../../../../assets/images/home/byke.png";
+import travel from "../../../../assets/icons/home-icons/Active Travel.png";
+import freight from "../../../../assets/icons/home-icons/Freight.png";
+import bus from "../../../../assets/icons/home-icons/bus.png";
+import plane from "../../../../assets/icons/home-icons/air-plane.png";
+import meritime from "../../../../assets/icons/home-icons/Ports Meritime.png";
+import train from "../../../../assets/icons/home-icons/train.png";
+import logistics from "../../../../assets/icons/home-icons/Logistics.png";
+import operation from "../../../../assets/icons/home-icons/Operations.png";
+import byke from "../../../../assets/icons/home-icons/byke.png";
 function Together() {
   return (
     <div className="container">

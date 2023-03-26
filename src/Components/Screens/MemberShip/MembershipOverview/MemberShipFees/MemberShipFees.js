@@ -90,16 +90,16 @@ function MemberShipFees() {
             ))}
 
             <div className="card_footer">
-              <Link href="#" className="btn">
+              <Link to='/joinCilt' className="btn">
                 JOIN NOW
               </Link>
             </div>
           </div>
           <div className="membership_fees_card">
             <div className="card_header">
-              <span>Government Service Holders only</span>
+              <span>Other than Government Service Holders</span>
             </div>
-            {nonGovtCharges?.map((nonGovtCharge) => (
+            {nonGovtCharges?.slice(0,1).map((nonGovtCharge) => (
               <div className="card_body" key={nonGovtCharge._id}>
                 <div className="registration_fee">
                   <h5>Registration Fee</h5>
@@ -124,7 +124,7 @@ function MemberShipFees() {
             ))}
 
             <div className="card_footer">
-              <Link href="#" className="btn">
+              <Link to='/joinCilt' className="btn">
                 JOIN NOW
               </Link>
             </div>

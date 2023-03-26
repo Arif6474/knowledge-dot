@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./OurBoard.css";
-import coute from "../../../assets/images/icons/double-coute-bottom.svg";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import coute from "../../../assets/icons/double-coute-bottom.svg";
+import Banner from "../../../assets/images/about-us/ms-overview-banner.png";
 import {
   BOARD_MEMBERS_API,
   IMAGE_URL,
@@ -34,7 +34,7 @@ function OurBoard() {
 
   return (
     <div>
-        <Header/>
+      <Header />
       <BannerTop
         image={Banner}
         title="Our Board"
@@ -43,9 +43,7 @@ function OurBoard() {
       <div className="president_message_section">
         <div className="container">
           <div className="sc_title_wrapper border_bottom">
-            <h2 className="sc_title">{presedentMsgs[0]?.title}
-            
-            </h2>
+            <h2 className="sc_title">{presedentMsgs[0]?.title}</h2>
           </div>
           {presedentMsgs?.map((presedentMsg) => (
             <div className="president" presedentMsg={presedentMsg._id}>

@@ -4,13 +4,18 @@ import { Link } from "react-router-dom";
 import { IMAGE_URL } from "../../../../Utilities/APIs";
 import { format } from "date-fns";
 function EventCart({ event }) {
-  format(new Date(event?.date), "dd/MM/yyyy");
+
   return (
     <div className="news_cart">
         <Link to={`/eventDetails/${event?._id}`}>
       <div className="card ">
         <div className="card_image">
-          <img src={IMAGE_URL + event?.image} alt="..." />
+          <div className="event_image">
+            <img
+              src={IMAGE_URL + event?.image}
+              alt="events"
+            />
+          </div>
         </div>
         <div className="card-body">
           <span className="date">

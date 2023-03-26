@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/ms-overview-banner.png";
 import NewsCart from './NewsCart/NewsCart'
 import { NEWS_API } from '../../../Utilities/APIs'
 import axios from 'axios'

@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerTop from '../../Partials/Sections/BannerTop/BannerTop'
-import Banner from '../../../assets/images/banners/ms-overview-banner.png'
-import Partners from '../Home/Partners/Partners'
+import Banner from '../../../assets/images/about-us/ms-overview-banner.png'
+import Partners from '../../Partials/Sections/Partners/Partners'
 import Header from '../../Partials/Header/Header'
 
 

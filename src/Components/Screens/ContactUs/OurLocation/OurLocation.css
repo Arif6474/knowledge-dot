@@ -43,6 +43,7 @@
 .location_map_wrapper iframe {
     width: 100%;
     min-height: 65rem;
+    border: none;
 }
 
 @media (max-width: 767.98px) {

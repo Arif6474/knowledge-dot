@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { COD_DESCRIPTION_API, CONDUCTS_API, IMAGE_URL } from '../../../../../Utilities/APIs';
 
@@ -47,7 +46,7 @@ function CodeConduct() {
                                     }
 
                                 </ul>
-                                <Link to='/joinCilt' className='btn'>Join Now</Link>
+                                {/* <Link to='/joinCilt' className='btn'>Join Now</Link> */}
                             </div>
                             <div className="thumb_wrappers">
                                 <img src={IMAGE_URL + conducts?.image} alt="mb-thumb" />

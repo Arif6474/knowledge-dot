@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./ContactUs.css";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/aboutUs.png";
 import axios from "axios";
-import { OFFICE_INFO_API } from "../../../Utilities/APIs";
+import { CONTACTS_API, OFFICE_INFO_API } from "../../../Utilities/APIs";
 import BannerTop from "../../Partials/Sections/BannerTop/BannerTop";
 import Header from "../../Partials/Header/Header";
 function ContactUs() {
   const [officeInfos, setOfficeInfos] = useState(null);
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
   useEffect(() => {
     async function getOfficeInfos() {
       const { data } = await axios.get(OFFICE_INFO_API);
@@ -15,9 +19,27 @@ function ContactUs() {
     getOfficeInfos();
   }, []);
 
+
+  async function handleSubmit(e) {
+
+      e.preventDefault()
+
+      const contactMessages = {
+        name,
+        email,
+        subject,
+        message,
+  
+      };
+   
+      await axios.post(CONTACTS_API, contactMessages)
+      e.target.reset()
+
+  }
+
   return (
     <div>
-      <Header/>
+      <Header />
       <BannerTop
         image={Banner}
         title="Contact Us"
@@ -33,7 +55,7 @@ function ContactUs() {
                   <h1 className="sc_title">Send Us A Message</h1>
                 </div>
               </div>
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <div className="name-email">
                   <div className="input_content">
                     {" "}
@@ -42,6 +64,7 @@ function ContactUs() {
                       placeholder="Your Name..."
                       name=""
                       id=""
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="input_content">
@@ -51,12 +74,19 @@ function ContactUs() {
                       placeholder="Your Email..."
                       name=""
                       id=""
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                 </div>
                 <div className="input_content">
                   {" "}
-                  <input type="text" placeholder="subject..." name="" id="" />
+                  <input
+                    type="text"
+                    placeholder="subject..."
+                    name=""
+                    id=""
+                    onChange={(e) => setSubject(e.target.value)}
+                  />
                 </div>
                 <div className="input_content">
                   <textarea
@@ -65,10 +95,11 @@ function ContactUs() {
                     placeholder="Write your message ..."
                     name=""
                     id=""
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <div className="send">
-                  <button to="/joinCilt" className="btn ">
+                  <button to="/joinCilt"  type="submit" className="btn ">
                     Send
                   </button>
                 </div>

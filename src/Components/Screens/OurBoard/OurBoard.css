@@ -56,7 +56,7 @@
 .message_content p::before {
   content: "";
   position: absolute;
-  background-image: url(../../../assets/images/icons/double-coute-top.svg);
+  background-image: url(../../../assets/icons/double-coute-top.svg);
   background-repeat: no-repeat;
   width: 2.8rem;
   height: 1.9rem;

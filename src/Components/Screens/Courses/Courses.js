@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/aboutUs.png";
 import { COURSE_API } from "../../../Utilities/APIs";
 import Header from "../../Partials/Header/Header";
 import BannerTop from "../../Partials/Sections/BannerTop/BannerTop";

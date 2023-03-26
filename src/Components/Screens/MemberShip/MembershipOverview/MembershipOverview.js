@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Banner from '../../../../assets/images/banners/ms-overview-banner.png'
+import Banner from '../../../../assets/images/about-us/ms-overview-banner.png'
 
 import CodeConduct from './CodeConduct/CodeConduct';
 import MemberShipFees from './MemberShipFees/MemberShipFees';

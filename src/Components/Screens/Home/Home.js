@@ -6,7 +6,7 @@ import CiltBangladesh from './CiltBangladesh/CiltBangladesh'
 import Events from './Events/Events'
 import Forums from './Forums/Forums'
 import './Home.css'
-import Partners from './Partners/Partners'
+import Partners from '../../Partials/Sections/Partners/Partners'
 import Together from './Together/Together'
 function Home() {
     return (

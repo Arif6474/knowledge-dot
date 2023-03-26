@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { IMAGE_URL, JOIN_WE_LETS_API, WE_LET_MISSIONS_API, WOMEN_LOGISTICS_API } from '../../../Utilities/APIs'
 import BannerTop from '../../Partials/Sections/BannerTop/BannerTop'
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/ms-overview-banner.png";
 import './WomenLogistics.css'
 import WiLATRegionalForum from './WiLATRegionalForum/WiLATRegionalForum'
 import WiLATBangladeshiForum from './WiLATBangladeshiForum/WiLATBangladeshiForum'
@@ -93,7 +93,7 @@ function WomenLogistics() {
                             </div>
                         </div>
                         <div className="corporate_btn">
-                            <Link to="#" className="btn">
+                            <Link to='/joinCilt' className="btn">
                                 Join WiLAT
                             </Link>
                         </div>

@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 120px;
+  margin-top: 6rem;
 }
 .footer_inner_one {
   padding: 8.5rem 0 5.2rem;
@@ -105,7 +105,7 @@
 }
 .footer_inner_three button {
   font-family: Archivo;
-
+  cursor: pointer;
   font-size: 14px;
   line-height: 2.1rem;
   font-weight: 700;

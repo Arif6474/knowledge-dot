@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import banner from '../../../../assets/images/banners/banner.jpeg'
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,19 +10,20 @@ import "./Banner.css";
 // import required modules
 import { Autoplay, Pagination } from "swiper";
 import { Link } from "react-router-dom";
-// import axios from "axios";
-// import { IMAGE_URL, MAINSLIDER_API } from "../../../../Utilities/APIs";
-function Banner() {
-    // const [mainSliders, setMainSliders] = useState([]);
-    // console.log(mainSliders);
+import axios from "axios";
+import { IMAGE_URL, MAIN_SLIDER_API } from "../../../../Utilities/APIs";
 
-    // useEffect(() =>{
-    //     async function getMainSliderDec (){
-    //         const {data} = await axios.get(MAINSLIDER_API)
-    //         setMainSliders(data)
-    //     }
-    //     getMainSliderDec()
-    // }, [])
+function Banner() {
+    const [banners, setBanners] = useState([]);
+    console.log(banners);
+    useEffect(() => {
+        async function getEvent() {
+            const { data } = await axios.get(MAIN_SLIDER_API);
+            setBanners(data);
+        }
+        getEvent();
+    }, []);
+
     const pagination = {
         clickable: true,
 
@@ -42,30 +42,34 @@ function Banner() {
                 modules={[Autoplay, Pagination]}
                 className="mySwiper"
             >
+                {
+                    banners?.map(banner => 
+                        <SwiperSlide >
+                            <div className="swiper-slide banner" >
+                                <img src={IMAGE_URL + banner.image} alt="" />
+                                <div className="hero-container homeContent">
+                                    <div className="container">
+                                        <h1 className="heroTitle">
+                                        {banner.title}
+                                        </h1>
+                                        <p className="banner_desc">
+                                        {banner.description}
+                                        </p>
+                                        <div className="banner_btn">
+                                            <Link to="/aboutUs" className="btn">
+                                                Read More
+                                            </Link>
+                                        </div>
 
-                <SwiperSlide >
-                    <div className="swiper-slide banner" >
-                        <img  src={banner} alt="" />
-                        <div className="hero-container homeContent">
-                            <div className="container">
-                                <h1 className="heroTitle">
-                                    Together we’re shaping
-                                    the future of logistics
-                                    and transport
-                                </h1>
-                                <p className="banner_desc">
-                                    Celebrating 100 years supporting transport and logistics professional
-                                </p>
-                                <div className="banner_btn">
-                                    <Link to="#" className="btn">
-                                        Read More
-                                    </Link>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
+                        </SwiperSlide>
+
+                    )
+                }
+
+
 
             </Swiper>
         </div>

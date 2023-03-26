@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BannerTop from "../../Partials/Sections/BannerTop/BannerTop";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/ms-overview-banner.png";
 import { IMAGE_URL, YPW_JOINS_API, YP_TOP_API } from '../../../Utilities/APIs';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -78,8 +78,8 @@ function YoungProfession() {
                             </div>
                         </div>
                         <div className="corporate_btn">
-                            <Link to="#" className="btn">
-                                Join Corporate Membership
+                            <Link to="/joinCilt" className="btn">
+                               Join Young Professional
                             </Link>
                         </div>
                     </div>
@@ -94,12 +94,7 @@ function YoungProfession() {
                 <YoungProfessionalTeam />
                 <YoungProfessionComments/>
                 <LocalYPGroups/>
-                {/* 
-                <YoungProfessionPeople />
-                <YoungProfessionBangladesh />
-                <YoungMemberBenefits />
-                <YoungProfessionQuotes />
-                <MembersBenefitsAddress /> */}
+                
             </section>
         </>
     )

@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import facebook from '../../../assets/images/icons/facebook.svg'
-import twitter from '../../../assets/images/icons/twitter.svg'
-import linkenin from '../../../assets/images/icons/linked-in.svg'
-import instagram from '../../../assets/images/icons/instagram.svg'
+import facebook from '../../../assets/icons/facebook.svg'
+import twitter from '../../../assets/icons/twitter.svg'
+import linkenin from '../../../assets/icons/linked-in.svg'
+import instagram from '../../../assets/icons/instagram.svg'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import { FOOTER_API, IMAGE_URL } from '../../../Utilities/APIs'
+import { FOOTER_API, IMAGE_URL, SOCIAL_LINKS_API, SUBSCRIBES_API } from '../../../Utilities/APIs'
 function Footer() {
 
     const [footers, setFooter] = useState(null)
+    const [socialLinks, setSocialLinks] = useState(null)
+    const [email, setEmail] = useState('')
+   
     useEffect(() => {
 
         async function getFooter() {
@@ -17,8 +20,30 @@ function Footer() {
             setFooter(data)
         }
         getFooter()
+        async function getSocialLinks() {
+            const { data } = await axios.get(SOCIAL_LINKS_API)
+            setSocialLinks(data)
+        }
+        getSocialLinks()
 
     }, [])
+
+
+
+    async function handleSubmit(e) {
+
+        e.preventDefault()
+
+        const subscribe = { email }
+
+        const response = await axios.post(SUBSCRIBES_API, subscribe)
+
+        if (response) {
+           e.target.reset()
+
+        }
+
+    }
 
     return (
 
@@ -43,13 +68,13 @@ function Footer() {
                             <h6>About CILT</h6>
                             <ul className="icon">
                                 <li>
-                                    <Link href="about-us.html" className="link">Institute History</Link>
+                                    <Link to='/aboutUs' className="link">Institute History</Link>
                                 </li>
                                 <li>
-                                    <Link href="about-us.html" className="link">Regional Sections</Link>
+                                    <Link to='/youngProfession' className="link">Regional Sections</Link>
                                 </li>
                                 <li>
-                                    <Link href="our-board.html" className="link">Our Board</Link>
+                                    <Link to='/ourBoard' className="link">Our Board</Link>
                                 </li>
                             </ul>
                         </div>
@@ -57,14 +82,14 @@ function Footer() {
                             <h6>Education</h6>
                             <ul className="icon">
                                 <li>
-                                    <Link href="courses.html" className="link">Our Courses
+                                    <Link to='/courses' className="link">Our Courses
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="knowledge-center.html" className="link">Knowledge Centre</Link>
+                                    <Link to='/knowledgeCenter' className="link">Knowledge Centre</Link>
                                 </li>
                                 <li>
-                                    <Link href="career.html" className="link">Download Centre</Link>
+                                    <Link to='/career' className="link">Career</Link>
                                 </li>
                             </ul>
                         </div>
@@ -72,13 +97,13 @@ function Footer() {
                             <h6>Membership Groups</h6>
                             <ul className="icon">
                                 <li>
-                                    <Link href="women_in_logistics.html" className="link">Women in Logistics & Transport</Link>
+                                    <Link to='/womenInLogistics' className="link">Women in Logistics & Transport</Link>
                                 </li>
                                 <li>
-                                    <Link href="young_professional.html" className="link">Young Professionals</Link>
+                                    <Link to='/youngProfession' className="link">Young Professionals</Link>
                                 </li>
                                 <li>
-                                    <Link href="corporate_membership_overview.html" className="link">Corporate Membership</Link>
+                                    <Link to='/corporateMembershipOverview' className="link">Corporate Membership</Link>
                                 </li>
                             </ul>
                         </div>
@@ -86,14 +111,14 @@ function Footer() {
                             <h6>Contact With Us</h6>
                             <ul>
                                 <li>
-                                    <Link href="contact-us.html">MHK Terminal (4th Floor),
+                                    <Link to=''>MHK Terminal (4th Floor),
                                         110 Kazi
                                         Nazrul Islam Avenue,
-                                        <Link href="">MHK Terminal (4th Floor), 110 Kazi Nazrul Islam
+                                        <Link to=''>MHK Terminal (4th Floor), 110 Kazi Nazrul Islam
                                             Avenue, Banglamotors (3.08 mi) Dhaka, Bangladesh Dhaka-1000</Link> </Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="link">01711-434899</Link>
+                                    <Link to='' className="link">01711-434899</Link>
                                 </li>
 
                             </ul>
@@ -105,9 +130,15 @@ function Footer() {
                 <div className="footer_inner_three">
                     <div className="subscribe_wrapper">
                         <h6>Subscribe For Newsletter</h6>
-                        <form action="#">
+                        <form onSubmit={handleSubmit}>
                             <div className="input-group">
-                                <input type="email" className="form-control email-input" id="" placeholder="Enter your mail..." />
+                                <input
+                                    type="email"
+                                    className="form-control email-input"
+                                    id=""
+                                    placeholder="Enter your mail..."
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
                                 <button type="submit">Subscribe Now</button>
                             </div>
                         </form>
@@ -117,22 +148,22 @@ function Footer() {
                         <div className="social_wrapper">
                             <ul>
                                 <li>
-                                    <Link href="#" target="_blank">
+                                    <Link to={socialLinks && socialLinks[0].link} target="_blank">
                                         <img className="img-fluid" src={facebook} alt="facebook" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" target="_blank">
+                                    <Link to={socialLinks && socialLinks[2].link} target="_blank">
                                         <img className="img-fluid" src={twitter} alt="twitter" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" target="_blank">
+                                    <Link to={socialLinks && socialLinks[1].link} target="_blank">
                                         <img className="img-fluid" src={linkenin} alt="linkedin" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" target="_blank">
+                                    <Link to={socialLinks && socialLinks[3].link} target="_blank">
                                         <img className="img-fluid" src={instagram} alt="instagram" />
                                     </Link>
                                 </li>
@@ -148,7 +179,7 @@ function Footer() {
                         </p>
                     </div>
                     <div className="by_develop">
-                        <p>Designed & Developed by <Link href="https://theantopolis.com/" className="antopolis">Antopolis</Link></p>
+                        <p>Designed & Developed by <Link to='https://theantopolis.com/' className="antopolis">Antopolis</Link></p>
                     </div>
                 </div>
             </div>

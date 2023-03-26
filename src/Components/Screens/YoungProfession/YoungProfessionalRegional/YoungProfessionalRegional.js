@@ -20,7 +20,7 @@ function YoungProfessionalRegional() {
         <section className="profession_forum">
             <div className="container">
                 <div className="sc_title_wrapper border_bottom" >
-                    <h2 className="sc_title">Young Professionals Bangladeshi Forum</h2>
+                    <h2 className="sc_title">Young Professionals Regional Forum</h2>
                 </div>
                 <div className="member">
                     {

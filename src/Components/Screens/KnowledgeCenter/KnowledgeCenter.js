@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
+import Banner from "../../../assets/images/about-us/aboutUs.png";
 import "./KnowledgeCenter.css";
 
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import { KNOWLEDGE_TOPS_API } from "../../../Utilities/APIs";
 
 import BannerTop from "../../Partials/Sections/BannerTop/BannerTop";
 import LogistictVideo from "./LogistictVideo/LogistictVideo";
-import Brouchure from "./Brouchure/Brouchure";
+// import Brouchure from "./Brouchure/Brouchure";
 import Header from "../../Partials/Header/Header";
 function KnowledgeCenter() {
   const [knowledgeTops, setKnowledgeTops] = useState(null);
@@ -38,11 +38,11 @@ function KnowledgeCenter() {
       </div>
       <div className="login_button">
         <Link to="/joinCilt" className="btn">
-          Login
+          Join Cilt
         </Link>
       </div>
       <LogistictVideo />
-      <Brouchure />
+      {/* <Brouchure /> */}
     </div>
   );
 }

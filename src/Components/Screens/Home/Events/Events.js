@@ -20,7 +20,7 @@ function Events() {
       <div className="container">
         <div className="stronger_together">
           <div className="sc_title_wrapper center">
-            <p className="sm_title">EVENTS</p>
+            <p className="sm_title">KNOW ABOUT</p>
             <h1 className="sc_title">Events</h1>
           </div>
         </div>

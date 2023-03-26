@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './WhyJoinCilt.css';
-import joinCiltPlan from '../../../../assets/images/about-us/join-cilt-logo.svg'
+import joinCiltPlan from '../../../../assets/icons/join-cilt-logo.svg'
 import { WHY_JOIN_US_API } from '../../../../Utilities/APIs';
 import axios from 'axios';
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './CourseCart.css'
-import doller from '../../../../assets/images/icons/dollar-fill.svg'
-import calender from '../../../../assets/images/icons/calender.svg'
+import doller from '../../../../assets/icons/dollar-fill.svg'
+import calender from '../../../../assets/icons/calender.svg'
 import { Link } from 'react-router-dom'
 import {  IMAGE_URL } from '../../../../Utilities/APIs'
 function CourseCart({course}) {

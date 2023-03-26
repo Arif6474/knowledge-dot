@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
@@ -47,7 +47,7 @@ function WiLATBangladesh() {
                             }
 
                         </ul>
-                        <Link to='/joinCilt' className='btn'>Read More</Link>
+                        {/* <Link to='/joinCilt' className='btn'>Read More</Link> */}
                     </div>
                     <div className="thumb_wrappers">
                         <img src={IMAGE_URL + brouchure?.image} alt="mb-thumb" />

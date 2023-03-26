@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./CorporateMembership.css";
-import Banner from "../../../assets/images/banners/ms-overview-banner.png";
-import captureert from "../../../assets/images/corporate_membership/Captureert-1.png";
+import Banner from "../../../assets/images/about-us/aboutUs.png";
 import captureert2 from "../../../assets/images/corporate_membership/Rectangle-48.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import {
   CORPORATE_MIDDLES_API,
   CORPORATE_TOPS_API,
+  IMAGE_URL,
+  MEMBERSHIP_BENIFITS_API,
 } from "../../../Utilities/APIs";
 import BannerTop from "../../Partials/Sections/BannerTop/BannerTop";
 import Header from "../../Partials/Header/Header";
 function CorporateMembership() {
   const [corporateTops, setCorporateTops] = useState(null);
+  const [corporateMemberComment, setCorporateMemberComment] = useState(null);
+  const [membershipBenefits, setMembershipBenefits] = useState(null);
+  console.log(membershipBenefits);
   useEffect(() => {
     async function getCorporateTops() {
       const { data } = await axios.get(CORPORATE_TOPS_API);
@@ -20,13 +24,21 @@ function CorporateMembership() {
     }
     getCorporateTops();
   }, []);
-  const [corporateMemberComment, setCorporateMemberComment] = useState(null);
+  
   useEffect(() => {
     async function getCorporateMemberComment() {
       const { data } = await axios.get(CORPORATE_MIDDLES_API);
       setCorporateMemberComment(data);
     }
     getCorporateMemberComment();
+  }, []);
+
+  useEffect(() => {
+    async function getMembershipBenefits() {
+      const { data } = await axios.get(MEMBERSHIP_BENIFITS_API);
+      setMembershipBenefits(data);
+    }
+    getMembershipBenefits();
   }, []);
 
   return (
@@ -48,7 +60,8 @@ function CorporateMembership() {
               </div>
             </div>
             <div className="cmo_image">
-              <img src={captureert} alt="" />
+              <img src={corporateMemberComment && IMAGE_URL + corporateMemberComment[0]?.image} alt="" />
+              
               <div className="sc_title_wrapper center">
                 <div className="sc_description">
                   <p className="desc corporate_desc">

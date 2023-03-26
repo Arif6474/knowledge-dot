@@ -1,6 +1,6 @@
 import React from 'react';
 // import CardDetails from '../CareerCard/CardDetails';
-import Banner from '../../../assets/images/banners/ms-overview-banner.png'
+import Banner from '../../../assets/images/about-us/aboutUs.png'
 import CareerCard from './CareerCard/CareerCard';
 import BannerTop from '../../Partials/Sections/BannerTop/BannerTop';
 import './Career.css'

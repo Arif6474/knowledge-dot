@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../assets/images/logo/header-logo.png";
-import company from "../../../assets/images/logo/logo.png";
-import downArrow from "../../../assets/images/icons/downArrow.png";
+import logo from "../../../assets/logos/header-logo.png";
+import company from "../../../assets/logos/logo.png";
+import downArrow from "../../../assets/icons/downArrow.png";
 import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu";
 import { RiCloseFill } from "@react-icons/all-files/ri/RiCloseFill";
 

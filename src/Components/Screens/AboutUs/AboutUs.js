@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BannerTop from '../../Partials/Sections/BannerTop/BannerTop'
-import Banner from "../../../assets/images/banners/aboutUs.png";
+import Banner from "../../../assets/images/about-us/aboutUs.png";
 import axios from 'axios';
 import { COREVALUE_API } from '../../../Utilities/APIs';
 import WhoWeAre from './WhoWeAre/WhoWeAre';
@@ -8,6 +8,7 @@ import WhatWeDo from './WhatWeDo/WhatWeDo';
 import WhyJoinCilt from './WhyJoinCilt/WhyJoinCilt';
 import OurHistory from './OurHistory/OurHistory';
 import Header from '../../Partials/Header/Header';
+import Partners from '../../Partials/Sections/Partners/Partners';
 function AboutUs() {
   const [coreValues, setCoreValues] = useState(null);
   useEffect(() => {
@@ -36,6 +37,7 @@ function AboutUs() {
       <WhoWeAre/>
       <WhatWeDo/>
       <WhyJoinCilt/>
+      <Partners/>
       <OurHistory/>
     </>
   )

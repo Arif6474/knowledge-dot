@@ -34,7 +34,7 @@ function CiltBangladesh() {
                                     <p>{history?.description}</p>
                                 </div>
                                 <div className="cilt_btn">
-                                    <Link to="#" className="btn">
+                                    <Link to="/aboutUs" className="btn">
                                         Read More
                                     </Link>
                                 </div>
